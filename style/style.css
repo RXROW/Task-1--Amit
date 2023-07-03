@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+/* Header */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:  space-around;
+    background-color: #5f36d19f;
+    flex-wrap: wrap;
+    min-height: 70px;
+  
+}
+nav ul{
+    display: flex;
+ 
+ 
+    list-style: none;
+}
+nav ul li{
+    padding: 0 20px;
+
+}
+nav ul a{
+    color: #001144;
+    font-size: 24px;
+    display: block;
+   text-decoration: none;
+   transition: 0.4s;
+
+}
+nav ul a:hover{
+    color: #fff;
+    font-size: 26px;
+ 
+}
+nav img{
+    width: 60px;
+    height: 100%;
+}
+
+nav .form input{
+    height: 40px;
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+}
+nav .form button{
+    height: 40px;
+    padding: 5px;
+    background-color: #cbc4cfd1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+nav .form button:hover{
+    background-color:#001144;
+    color: #fff;
+}
+
+
+/* Responsive */
+@media screen and (max-width:600px) {
+    ul{
+        flex-direction: column;  
+    }
+    nav{
+    justify-content: start ;
+
+    }
+    nav .form {
+    margin: 15px auto;
+   }
+     
+    
+}
+@media screen and (min-width:600px)  and (max-width:1000px){
+    ul{
+        flex-direction: row;
+    }
+    nav .form {
+        margin: 15px auto;
+       }
+    
+    
+}
+/* End Nav */
+/* Strat Icon  */
+.icons{
+
+     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:  space-around;
+    background-color: #110362db;
+    padding: 5px 0;
+
+}
+.icons .social{
+    background-color: #170138;
+    padding: 10px;
+    border-radius: 20px;
+}
+.icons .social i{
+     color: #fff;
+    padding: 0 5px;
+    font-size: 22px;
+    transition: 0.4s;
+    
+}
+.icons .social .fc:hover{
+     color: #0065c3;
+
+
+}
+.icons .social .ms:hover{
+     color: #e401a4;
+
+
+}
+.icons .social .tw:hover{
+     color: #00a4f5;
+
+
+}
+
+
+.icons .search{
+    width:  250px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+   
+}
+.icons .search{
+    width:  250px;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+   
+}
+.icons .search span{
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 20px;
+    color: #09d8d8;
+}
+.icons .search i{
+    font-size: 22px;
+    color: #fff;
+}
+
+.icons h2{
+    font-size: 33px;
+    color: #fff;
+}
+.icons span.heading{
+    font-size: 33px;
+    color: #00bad3;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width:600px) {
+    .icons .social,
+    .icons .search,
+    .icons h2
+    {
+        margin: 10px 0;
+
+
+    }
+    
+}
+
+
+
+/* End Icon  */
+/* Srtat Img Section */
+.container{
+    background-image: url("../imgs/background_website.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  gap: 30px;
+    flex-wrap: wrap;
+ 
+}
+.box {
+    width: 300px;
+    border: 1px solid #ccc;
+    margin: 15px 0; 
+     
+}
+.box h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.3s;
+}
+.box:hover h2{
+    opacity: 1;
+    
+}
+.box img{
+    max-width: 100%;
+   
+    transition: 0.3s;
+}
+
+.box:hover img{
+    filter:grayscale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Img Section */
+
+     
